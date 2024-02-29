@@ -81,6 +81,10 @@
         <label for="item3">Steel:</label>
         <input type="number" id="item3" value="0">
     </div>
+    <div class="item">
+        <label for="item4">Repair Kits:</label>
+        <input type="number" id="item4" value="0">
+    </div>
     <button onclick="calculateTotal()">Calculate Total</button>
     <div class="total" id="total"></div>
 </div>
@@ -90,7 +94,7 @@
         var item1 = parseInt(document.getElementById('item1').value);
         var item2 = parseInt(document.getElementById('item2').value);
         var item3 = parseInt(document.getElementById('item3').value);
-        var total = item1 * 75 + item2 * 100 + item3 * 125; // Pricing logic, adjust as needed
+        var total = item1 * 75 + item2 * 100 + item3 * 125 + item4 * 600; // Pricing logic, adjust as needed
         document.getElementById('total').innerHTML = "Total Price: $" + total.toFixed(2);
     }
 </script>
