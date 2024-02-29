@@ -7,20 +7,23 @@
 <style>
     body {
         font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/background.png);
         margin: 0;
         padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .container {
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         padding: 20px;
-        width: 300px;
+        width: 310px;
+        position: absolute;
     }
     h1 {
         text-align: center;
@@ -35,10 +38,13 @@
         color: #555;
     }
     input[type="number"] {
-        width: 100%;
-        padding: 8px;
+        width: 94%;
+        padding: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
+        margin: 0;
+        display: block;
+        position: relative;
     }
     button {
         width: 100%;
